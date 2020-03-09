@@ -1,0 +1,32 @@
+{
+  "name": "eso-007",
+  "version": "1.0.0",
+  "description": "eSolutions website concept for project ESO-007",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "html5-boilerplate": "^7.3.0",
+    "jshint": "^2.11.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/csharpforevermore/ESO-007"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "sass"
+  ],
+  "author": "Chris Randle",
+  "license": "ISC"
+}

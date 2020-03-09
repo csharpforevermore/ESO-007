@@ -1,0 +1,39 @@
+// Include parts of Bootstrap 
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+// Optional
+// @import "node_modules/bootstrap/scss/reboot";
+// @import "node_modules/bootstrap/scss/type";
+// @import "node_modules/bootstrap/scss/images";
+// @import "node_modules/bootstrap/scss/code";
+// @import "node_modules/bootstrap/scss/grid";
+
+
+/* overrides all *-primary */
+$theme-colors: (
+     "primary": #FF69B4
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+    color: black;
+    background: #fff;
+}
+
+div, span, p {
+    border: 1px solid black;
+}
+
+.jumbotron {
+    background-image: url('http://placekitten.com/1600/500');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
