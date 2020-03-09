@@ -17,23 +17,25 @@ $theme-colors: (
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
+¬
 body {
     color: black;
     background: #fff;
 }
 
-div, span, p {
-    border: 1px solid black;
-}
+// div, span, p {
+//     border: 1px solid black;
+// }
 
-.jumbotron {
-    background-image: url('http://placekitten.com/1600/500');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
+.btn-static {
+    background-color: #cd5921;
+    border: 1px solid lightgrey;
+    cursor: default;
+    border-radius: 50em;
+    color: white;
+  }
+  .btn-static:active {
+    -moz-box-shadow:    inset 0 0 0px white;
+    -webkit-box-shadow: inset 0 0 0px white;
+    box-shadow:         inset 0 0 0px white;
   }
