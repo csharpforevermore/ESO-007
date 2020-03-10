@@ -1,6 +1,10 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
+
+const copy = require('gulp-copy');
+const through = require('through2');
+
 //compile scss into css
 function style() {
     return gulp.src('src/scss/**/*.scss')
@@ -24,3 +28,17 @@ function watch() {
 
 exports.style = style;
 exports.watch = watch;
+
+
+function copyFunction() {
+    var sourceFiles = ['./node_modules/jquery/jquery.min.js', './node_modules/jquery/jquery.js'];
+    var destination = './src/scripts/';
+    
+    return gulp.src(sourceFiles)
+            .pipe(gulp.dest(destination));
+    
+}
+
+
+
+gulp.task(copyFunction, copyFunction);
